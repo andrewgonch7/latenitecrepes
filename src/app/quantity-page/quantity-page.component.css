@@ -1,0 +1,57 @@
+.container-fluid {
+  background-color: #fff8f3;
+}
+
+#nutellaCrepe {
+  background-color: #fff;
+  max-height: 450px;
+  position: relative;
+}
+
+#crepeName {
+  font-size: 2vw;
+  color: #774A4A;
+}
+
+#price {
+  font-size: 2vw;
+  color: #774A4A;
+}
+
+.countContainer {
+  color: #774A4A;
+  text-align: center;
+  font-size: 25vw;
+}
+
+@media (max-width: 1470px) {
+  #nutellaCrepe {
+    max-height: 367px;
+  }
+}
+
+@media (max-width: 1226px) {
+  #nutellaCrepe {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 1020px) {
+  #nutellaCrepe {
+    max-height: 240px;
+  }
+}
+
+@media (max-width: 890px) {
+  #nutellaCrepe {
+    max-height: 200px;
+  }
+}
+
+img {
+  max-width: 75%;
+  max-height: 75%;
+  margin: auto;
+  padding-top: 5%;
+  display: block; /* remove extra space below image */
+}

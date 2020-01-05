@@ -1,0 +1,1126 @@
+<div class="container checkout">
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            
+                                <div class="col-lg-12">
+                    <button id="add-more-items" type="button" class="btn btn-primary btn-block mt-5 mt-lg-3">
+                        ← Add more items
+                    </button>
+                </div>
+                            
+            <div class="row mt-4 d-none d-lg-block">
+                <div class="col-sm-12">
+                    <div id="cart-checkout-panel-component" class="card"><div class="card-header">
+                            Your order from:
+                            <br> <h4>Late Nite Crepes - Raleigh, NC</h4></div> <div class="card-body"><div class="row"><div class="col-lg-2">
+                                        1
+                                    </div> <div class="col">
+                                        Sixpack
+                                    </div> <div class="col"><span class="float-right">$9.50</span> <!----></div></div> <div class="row"><div class="col-lg-2">6</div> <div class="col">Chocolate Chunk</div> <!----></div><div class="row"><div class="col-lg-2">
+                                        1
+                                    </div> <div class="col">
+                                        Sugar Rush (12 Traditional)
+                                    </div> <div class="col"><span class="float-right">$17.50</span> <!----></div></div> <div class="row"><div class="col-lg-2">12</div> <div class="col">Chocolate Chunk</div> <!----></div></div> <div class="card-footer"><div class="row"><div class="col-sm-6">
+                                    Subtotal
+                                </div> <div class="col-sm-6"><span class="float-right">$27.00</span></div></div> <div class="row"><div class="col-sm-6">
+                                    Tax
+                                </div> <div class="col-sm-6"><span class="float-right">$2.39</span></div></div> <div class="row"><div class="col-sm-6">
+                                                                                Delivery
+                                                                        </div> <div class="col-sm-6"><span class="float-right">$1.99</span></div></div> <div class="row"><div class="col-sm-6">
+                                    Tip
+                                </div> <div class="col-sm-6"><span class="float-right total-tip">$6.25</span></div></div> <!----> <!----> <div class="row"><div class="col-sm-6"><b>Total</b></div> <div class="col-sm-6"><span class="float-right total-total"><b>$37.63</b></span></div></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            
+            
+                                <div class="row mt-2">
+                    <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Recipient Delivery Information</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <input type="hidden" id="store-current-order-type-id" value="2">
+                                    <div class="row">
+                                        <div class="col form-group">
+                                            <input id="recipient-name" type="text" class="form-control" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input id="recipient-phone" type="tel" class="form-control" placeholder="Phone #" im-insert="true">
+                                            </div>
+                                            <div class="col">
+                                            <input id="recipient-phone-extension" type="number" class="form-control" placeholder="Ext.">
+                                        </div>
+                                    </div>
+                                    
+                                                                                                                        <div class="row mt-3">
+                                            <div class="col">
+                                                <p class="form-control-static">3001 Hillsborough Street, Raleigh, NC 27607</p>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input id="recipient-address-2" type="text" class="form-control" placeholder="Apt/Suite">
+                                            </div>
+                                        </div>
+                                                                        </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        <input type="hidden" id="recipient-zip" value="27607">
+                                    <input type="hidden" id="recipient-address" value="3001 Hillsborough Street">
+                <input type="hidden" id="recipient-address-2" value="">
+                <input type="hidden" id="recipient-city" value="Raleigh">
+                <input type="hidden" id="recipient-state" value="NC">
+                <input type="hidden" id="dorm-id-selected" value="">
+                <input type="hidden" id="address-id" value="">
+                            
+                                <div class="row mt-2">
+                    
+                                                <div class="col-sm-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Delivery Instructions (optional)</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col">
+                                                <textarea id="instructions" class="form-control" placeholder="Message" rows="1" maxlength="29"></textarea>
+                                                <small id="instructionsHelpBlock" class="form-text text-muted"></small>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-sm-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Message for Recipient (optional)</h5>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <textarea id="comments" class="form-control" placeholder="Message" rows="1" maxlength=" 135 "></textarea>
+                                            <small id="commentHelpBlock" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
+            <div id="app" class="row mt-2"><div class="col-sm-12 col-lg-12"><div class="card"><div class="card-header"><div class="row"><div class="col-sm-6"><h5>Your Info</h5></div> <div class="col-sm-6"><div class="pretty-checkbox-container"><div class="pretty p-icon p-jelly p-square p-bigger p-primary"><input id="copy-recipient" type="checkbox" checked="checked"> <div class="state p-primary"><label for="copy-recipient">Same as above</label></div></div></div></div></div></div> <div class="card-body"><form><div class="row"><div class="col-lg-8"><div class="form-group row"><div class="col"><input id="customer-name" type="text" placeholder="Full Name" class="form-control"></div></div> <div class="row"><div class="col"><input id="customer-phone" type="tel" class="form-control" im-insert="true" placeholder="Phone #"></div> <div class="col"><input id="customer-phone-extension" type="tel" placeholder="Ext." class="form-control"></div></div> <div id="checkout-your-info-email" class="row mt-3"><div class="col"><input id="customer-email" type="email" placeholder="Email" value="" class="form-control"></div></div> <div class="row mt-3 register-signup-div" style="display: none;"><div class="col"><input id="register-new-password" type="password" placeholder="Password" class="form-control"></div> <div class="col"><input id="register-new-password-confirm" type="password" placeholder="Confirm Password" class="form-control"></div></div> <div id="checkout-login-wrap" class="row mt-3" style="display: none;"><div class="col"><div id="checkout-login-forum-error" role="alert" class="alert alert-danger" style="display: none;"></div> <div class="form-group"><label for="checkout-login-email" class="sr-only">Email</label> <input type="email" id="checkout-login-email" name="email" placeholder="Email" class="form-control"></div> <div class="form-group"><label for="checkout-login-password" class="sr-only">Password</label> <input type="password" id="checkout-login-password" name="password" placeholder="Password" class="form-control"></div> <div class="form-group"><div class="pretty p-icon p-jelly p-square p-bigger p-primary"><input type="checkbox" id="checkout-login-remember-me" name="remember_me"> <div class="state p-primary"><i class="icon fa fa-check"></i> <label>Remember Me</label></div></div></div> <div class="form-group"><button type="button" id="checkout-login-btn" class="btn btn-primary btn-block">Log In</button></div></div></div></div> <div class="col-lg-4"><div class="row mt-2"><div class="col-sm-12"><div class="pretty p-default p-round"><input type="radio" name="payment_guest" checked="checked" value="Nope"> <div class="state"><label>Continue As Guest</label></div></div> <div class="pretty p-default p-round"><input type="radio" name="payment_guest" value="Register"> <div class="state"><label>Register After Checkout</label></div></div> <div class="pretty p-default p-round"><input type="radio" name="payment_guest" value="Already"> <div class="state"><label>Already Registered</label></div></div></div></div></div></div></form></div></div></div></div>
+                            <div class="row mt-2">
+                <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5>
+                                         Delivery Time
+                                                                                </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="checkout-edit-time" class="card-body text-center">
+                                <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+                                <span class="cart-edit-label">(Edit)</span>
+                                <span class="cart-delivery-text">Delivery at ASAP on 12/27/19</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                                                        <div class="row mt-2">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Is this location on campus?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row mt-1">
+                                            <div class="col">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="location-on-campus" name="location_type" class="custom-control-input" value="on-campus">
+                                                    <label class="custom-control-label" for="location-on-campus">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="location-off-campus" name="location_type" class="custom-control-input" checked="true">
+                                                    <label class="custom-control-label" for="location-off-campus">No</label>
+                                                </div>
+                                            </div>
+                                            <div class="col dorm-selection-col  d-none ">
+                                                <select id="dorm-selection" class="custom-select">
+                                                    <option value="-1" disabled="" selected="">Choose a Campus building</option>
+                                                    <option value="0">Other</option>
+                                                    
+                                                <optgroup label="North Carolina State"><option value="1159">Alexander Hall</option><option value="1160">Avent Ferry</option><option value="1161">Bagwell Hall</option><option value="1162">Becton Hall</option><option value="1163">Berry Hall</option><option value="1164">Bowen Hall</option><option value="1165">Bragaw Hall</option><option value="1166">Carroll Hall</option><option value="1167">Gold Hall</option><option value="1168">Lee Hall</option><option value="1169">Metcalf Hall</option><option value="1170">North Hall</option><option value="1171">Owen Hall</option><option value="1172">Sullivan Hall</option><option value="1173">Syme Hall</option><option value="1174">Tucker Hall</option><option value="1175">Turlington Hall</option><option value="1176">Watauga Hall</option><option value="1177">Welch Hall</option><option value="1178">Wood Hall</option></optgroup></select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+            
+
+            
+            <div class="row mt-2 mb-5">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Payment Method</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="ccdownmsg" class="alert alert-danger mb-5" role="alert" style="display: none;">
+                                We are sorry, but our credit card processing is currently down. Please select another payment method, or try back soon.
+                            </div>
+                            <form>
+                                <ul class="nav nav-pills nav-justified mb-3 payment-hide show-pay" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active select-payment-method" id="pills-credit-tab" data-toggle="pill" href="#pills-credit" role="tab" aria-controls="pills-credit" aria-selected="true" data-method="credit">Credit Card</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link select-payment-method" id="pills-cash-tab" data-toggle="pill" href="#pills-cash" role="tab" aria-controls="pills-cash" aria-selected="false" data-method="cash">Cash</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link select-payment-method" id="pills-giftcard-tab" data-toggle="pill" href="#pills-giftcard" role="tab" aria-controls="pills-giftcard" aria-selected="false" data-method="giftcard">Gift Card</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-credit" role="tabpanel" aria-labelledby="pills-credit-tab">
+                                        
+                                            
+
+                                            <div class="new-card-container">
+                                                <div class="form-group has-success">
+                                                    <input id="cc-name" name="cc-name" type="text" class="form-control cc-name" required="" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error" placeholder="Name on card">
+                                                    <span class="invalid-feedback">Enter the name as shown on credit card</span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" required="" pattern="[0-9\s]{16-19}" im-insert="true" placeholder="Card number">
+                                                    <span class="invalid-feedback">Enter a valid 16 digit card number</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" required="" placeholder="MM / YY" autocomplete="cc-exp" im-insert="true">
+                                                            <span class="invalid-feedback">Enter the expiration date</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-group">
+                                                            <input id="cc-security-code" name="cc-security-code" type="tel" class="form-control cc-cvc" required="" autocomplete="off" placeholder="cvv" maxlength="4">
+                                                            <span class="invalid-feedback order-last">Enter the 3-digit code on back, or 4 digit code on the front if using an American Express card.</span>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fa fa-question-circle fa-lg" data-toggle="popover" data-container="body" data-html="true" data-title="Security Code" data-content="<div class='text-center one-card'>The 3 digit code on back of the card (or 4 digit code on the front of your American Express).<div class='visa-mc-cvc-preview'></div></div>" data-trigger="hover" data-original-title="" title=""></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input id="cc-zip" name="cc_zip" type="text" class="form-control" value="" data-val="true" data-val-required="Please enter the ZIP/Postal code" autocomplete="postal-code" placeholder="Postal code">
+                                                    <span class="help-block" data-valmsg-for="cc-zip" data-valmsg-replace="true"></span>
+                                                </div>
+                                            </div>
+
+                                                                                        
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-cash" role="tabpanel" aria-labelledby="pills-schoolcash-tab">
+                                        <p>Pay with cash on delivery.</p>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="pills-giftcard" role="tabpanel" aria-labelledby="pills-giftcard-tab">
+                                        <form>
+                                            <div class="input-group mb-3">
+                                                <input id="giftcard-number" type="text" class="form-control" placeholder="Gift Card #" aria-label="Giftcard Number" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary btn-gc-apply" type="button">Apply</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div></form>
+                                                                        <div id="tip-div" class="row">
+                                        <div class="col-sm-12">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <label class="input-group-text" for="payment-tip">Tip</label>
+                                                </div>
+                                                <select class="custom-select" id="payment-tip">
+                                                                                                                <option value="0.00">
+
+                                                            $0.00
+                                                        </option>
+                                                                                                                <option value="0.25">
+
+                                                            $0.25
+                                                        </option>
+                                                                                                                <option value="0.50">
+
+                                                            $0.50
+                                                        </option>
+                                                                                                                <option value="0.75">
+
+                                                            $0.75
+                                                        </option>
+                                                                                                                <option value="1.00">
+
+                                                            $1.00
+                                                        </option>
+                                                                                                                <option value="1.25">
+
+                                                            $1.25
+                                                        </option>
+                                                                                                                <option value="1.50">
+
+                                                            $1.50
+                                                        </option>
+                                                                                                                <option value="1.75">
+
+                                                            $1.75
+                                                        </option>
+                                                                                                                <option value="2.00">
+
+                                                            $2.00
+                                                        </option>
+                                                                                                                <option value="2.25">
+
+                                                            $2.25
+                                                        </option>
+                                                                                                                <option value="2.50">
+
+                                                            $2.50
+                                                        </option>
+                                                                                                                <option value="2.75">
+
+                                                            $2.75
+                                                        </option>
+                                                                                                                <option value="3.00">
+
+                                                            $3.00
+                                                        </option>
+                                                                                                                <option value="3.25">
+
+                                                            $3.25
+                                                        </option>
+                                                                                                                <option value="3.50">
+
+                                                            $3.50
+                                                        </option>
+                                                                                                                <option value="3.75">
+
+                                                            $3.75
+                                                        </option>
+                                                                                                                <option value="4.00">
+
+                                                            $4.00
+                                                        </option>
+                                                                                                                <option value="4.25">
+
+                                                            $4.25
+                                                        </option>
+                                                                                                                <option value="4.50">
+
+                                                            $4.50
+                                                        </option>
+                                                                                                                <option value="4.75">
+
+                                                            $4.75
+                                                        </option>
+                                                                                                                <option value="5.00">
+
+                                                            $5.00
+                                                        </option>
+                                                                                                                <option value="5.25">
+
+                                                            $5.25
+                                                        </option>
+                                                                                                                <option value="5.50">
+
+                                                            $5.50
+                                                        </option>
+                                                                                                                <option value="5.75">
+
+                                                            $5.75
+                                                        </option>
+                                                                                                                <option value="6.00">
+
+                                                            $6.00
+                                                        </option>
+                                                                                                                <option value="6.25" selected="&quot;selected&quot;">
+
+                                                            $6.25
+                                                        </option>
+                                                                                                                <option value="6.50">
+
+                                                            $6.50
+                                                        </option>
+                                                                                                                <option value="6.75">
+
+                                                            $6.75
+                                                        </option>
+                                                                                                                <option value="7.00">
+
+                                                            $7.00
+                                                        </option>
+                                                                                                                <option value="7.25">
+
+                                                            $7.25
+                                                        </option>
+                                                                                                                <option value="7.50">
+
+                                                            $7.50
+                                                        </option>
+                                                                                                                <option value="7.75">
+
+                                                            $7.75
+                                                        </option>
+                                                                                                                <option value="8.00">
+
+                                                            $8.00
+                                                        </option>
+                                                                                                                <option value="8.25">
+
+                                                            $8.25
+                                                        </option>
+                                                                                                                <option value="8.50">
+
+                                                            $8.50
+                                                        </option>
+                                                                                                                <option value="8.75">
+
+                                                            $8.75
+                                                        </option>
+                                                                                                                <option value="9.00">
+
+                                                            $9.00
+                                                        </option>
+                                                                                                                <option value="9.25">
+
+                                                            $9.25
+                                                        </option>
+                                                                                                                <option value="9.50">
+
+                                                            $9.50
+                                                        </option>
+                                                                                                                <option value="9.75">
+
+                                                            $9.75
+                                                        </option>
+                                                                                                                <option value="10.00">
+
+                                                            $10.00
+                                                        </option>
+                                                                                                                <option value="10.25">
+
+                                                            $10.25
+                                                        </option>
+                                                                                                                <option value="10.50">
+
+                                                            $10.50
+                                                        </option>
+                                                                                                                <option value="10.75">
+
+                                                            $10.75
+                                                        </option>
+                                                                                                                <option value="11.00">
+
+                                                            $11.00
+                                                        </option>
+                                                                                                                <option value="11.25">
+
+                                                            $11.25
+                                                        </option>
+                                                                                                                <option value="11.50">
+
+                                                            $11.50
+                                                        </option>
+                                                                                                                <option value="11.75">
+
+                                                            $11.75
+                                                        </option>
+                                                                                                                <option value="12.00">
+
+                                                            $12.00
+                                                        </option>
+                                                                                                                <option value="12.25">
+
+                                                            $12.25
+                                                        </option>
+                                                                                                                <option value="12.50">
+
+                                                            $12.50
+                                                        </option>
+                                                                                                                <option value="12.75">
+
+                                                            $12.75
+                                                        </option>
+                                                                                                                <option value="13.00">
+
+                                                            $13.00
+                                                        </option>
+                                                                                                                <option value="13.25">
+
+                                                            $13.25
+                                                        </option>
+                                                                                                                <option value="13.50">
+
+                                                            $13.50
+                                                        </option>
+                                                                                                                <option value="13.75">
+
+                                                            $13.75
+                                                        </option>
+                                                                                                                <option value="14.00">
+
+                                                            $14.00
+                                                        </option>
+                                                                                                                <option value="14.25">
+
+                                                            $14.25
+                                                        </option>
+                                                                                                                <option value="14.50">
+
+                                                            $14.50
+                                                        </option>
+                                                                                                                <option value="14.75">
+
+                                                            $14.75
+                                                        </option>
+                                                                                                                <option value="15.00">
+
+                                                            $15.00
+                                                        </option>
+                                                                                                                <option value="15.25">
+
+                                                            $15.25
+                                                        </option>
+                                                                                                                <option value="15.50">
+
+                                                            $15.50
+                                                        </option>
+                                                                                                                <option value="15.75">
+
+                                                            $15.75
+                                                        </option>
+                                                                                                                <option value="16.00">
+
+                                                            $16.00
+                                                        </option>
+                                                                                                                <option value="16.25">
+
+                                                            $16.25
+                                                        </option>
+                                                                                                                <option value="16.50">
+
+                                                            $16.50
+                                                        </option>
+                                                                                                                <option value="16.75">
+
+                                                            $16.75
+                                                        </option>
+                                                                                                                <option value="17.00">
+
+                                                            $17.00
+                                                        </option>
+                                                                                                                <option value="17.25">
+
+                                                            $17.25
+                                                        </option>
+                                                                                                                <option value="17.50">
+
+                                                            $17.50
+                                                        </option>
+                                                                                                                <option value="17.75">
+
+                                                            $17.75
+                                                        </option>
+                                                                                                                <option value="18.00">
+
+                                                            $18.00
+                                                        </option>
+                                                                                                                <option value="18.25">
+
+                                                            $18.25
+                                                        </option>
+                                                                                                                <option value="18.50">
+
+                                                            $18.50
+                                                        </option>
+                                                                                                                <option value="18.75">
+
+                                                            $18.75
+                                                        </option>
+                                                                                                                <option value="19.00">
+
+                                                            $19.00
+                                                        </option>
+                                                                                                                <option value="19.25">
+
+                                                            $19.25
+                                                        </option>
+                                                                                                                <option value="19.50">
+
+                                                            $19.50
+                                                        </option>
+                                                                                                                <option value="19.75">
+
+                                                            $19.75
+                                                        </option>
+                                                                                                                <option value="20.00">
+
+                                                            $20.00
+                                                        </option>
+                                                                                                                <option value="20.25">
+
+                                                            $20.25
+                                                        </option>
+                                                                                                                <option value="20.50">
+
+                                                            $20.50
+                                                        </option>
+                                                                                                                <option value="20.75">
+
+                                                            $20.75
+                                                        </option>
+                                                                                                                <option value="21.00">
+
+                                                            $21.00
+                                                        </option>
+                                                                                                                <option value="21.25">
+
+                                                            $21.25
+                                                        </option>
+                                                                                                                <option value="21.50">
+
+                                                            $21.50
+                                                        </option>
+                                                                                                                <option value="21.75">
+
+                                                            $21.75
+                                                        </option>
+                                                                                                                <option value="22.00">
+
+                                                            $22.00
+                                                        </option>
+                                                                                                                <option value="22.25">
+
+                                                            $22.25
+                                                        </option>
+                                                                                                                <option value="22.50">
+
+                                                            $22.50
+                                                        </option>
+                                                                                                                <option value="22.75">
+
+                                                            $22.75
+                                                        </option>
+                                                                                                                <option value="23.00">
+
+                                                            $23.00
+                                                        </option>
+                                                                                                                <option value="23.25">
+
+                                                            $23.25
+                                                        </option>
+                                                                                                                <option value="23.50">
+
+                                                            $23.50
+                                                        </option>
+                                                                                                                <option value="23.75">
+
+                                                            $23.75
+                                                        </option>
+                                                                                                                <option value="24.00">
+
+                                                            $24.00
+                                                        </option>
+                                                                                                                <option value="24.25">
+
+                                                            $24.25
+                                                        </option>
+                                                                                                                <option value="24.50">
+
+                                                            $24.50
+                                                        </option>
+                                                                                                                <option value="24.75">
+
+                                                            $24.75
+                                                        </option>
+                                                                                                                <option value="25.00">
+
+                                                            $25.00
+                                                        </option>
+                                                                                                                <option value="25.25">
+
+                                                            $25.25
+                                                        </option>
+                                                                                                                <option value="25.50">
+
+                                                            $25.50
+                                                        </option>
+                                                                                                                <option value="25.75">
+
+                                                            $25.75
+                                                        </option>
+                                                                                                                <option value="26.00">
+
+                                                            $26.00
+                                                        </option>
+                                                                                                                <option value="26.25">
+
+                                                            $26.25
+                                                        </option>
+                                                                                                                <option value="26.50">
+
+                                                            $26.50
+                                                        </option>
+                                                                                                                <option value="26.75">
+
+                                                            $26.75
+                                                        </option>
+                                                                                                                <option value="27.00">
+
+                                                            $27.00
+                                                        </option>
+                                                                                                                <option value="27.25">
+
+                                                            $27.25
+                                                        </option>
+                                                                                                                <option value="27.50">
+
+                                                            $27.50
+                                                        </option>
+                                                                                                                <option value="27.75">
+
+                                                            $27.75
+                                                        </option>
+                                                                                                                <option value="28.00">
+
+                                                            $28.00
+                                                        </option>
+                                                                                                                <option value="28.25">
+
+                                                            $28.25
+                                                        </option>
+                                                                                                                <option value="28.50">
+
+                                                            $28.50
+                                                        </option>
+                                                                                                                <option value="28.75">
+
+                                                            $28.75
+                                                        </option>
+                                                                                                                <option value="29.00">
+
+                                                            $29.00
+                                                        </option>
+                                                                                                                <option value="29.25">
+
+                                                            $29.25
+                                                        </option>
+                                                                                                                <option value="29.50">
+
+                                                            $29.50
+                                                        </option>
+                                                                                                                <option value="29.75">
+
+                                                            $29.75
+                                                        </option>
+                                                                                                                <option value="30.00">
+
+                                                            $30.00
+                                                        </option>
+                                                                                                                <option value="30.25">
+
+                                                            $30.25
+                                                        </option>
+                                                                                                                <option value="30.50">
+
+                                                            $30.50
+                                                        </option>
+                                                                                                                <option value="30.75">
+
+                                                            $30.75
+                                                        </option>
+                                                                                                                <option value="31.00">
+
+                                                            $31.00
+                                                        </option>
+                                                                                                                <option value="31.25">
+
+                                                            $31.25
+                                                        </option>
+                                                                                                                <option value="31.50">
+
+                                                            $31.50
+                                                        </option>
+                                                                                                                <option value="31.75">
+
+                                                            $31.75
+                                                        </option>
+                                                                                                                <option value="32.00">
+
+                                                            $32.00
+                                                        </option>
+                                                                                                                <option value="32.25">
+
+                                                            $32.25
+                                                        </option>
+                                                                                                                <option value="32.50">
+
+                                                            $32.50
+                                                        </option>
+                                                                                                                <option value="32.75">
+
+                                                            $32.75
+                                                        </option>
+                                                                                                                <option value="33.00">
+
+                                                            $33.00
+                                                        </option>
+                                                                                                                <option value="33.25">
+
+                                                            $33.25
+                                                        </option>
+                                                                                                                <option value="33.50">
+
+                                                            $33.50
+                                                        </option>
+                                                                                                                <option value="33.75">
+
+                                                            $33.75
+                                                        </option>
+                                                                                                                <option value="34.00">
+
+                                                            $34.00
+                                                        </option>
+                                                                                                                <option value="34.25">
+
+                                                            $34.25
+                                                        </option>
+                                                                                                                <option value="34.50">
+
+                                                            $34.50
+                                                        </option>
+                                                                                                                <option value="34.75">
+
+                                                            $34.75
+                                                        </option>
+                                                                                                                <option value="35.00">
+
+                                                            $35.00
+                                                        </option>
+                                                                                                                <option value="35.25">
+
+                                                            $35.25
+                                                        </option>
+                                                                                                                <option value="35.50">
+
+                                                            $35.50
+                                                        </option>
+                                                                                                                <option value="35.75">
+
+                                                            $35.75
+                                                        </option>
+                                                                                                                <option value="36.00">
+
+                                                            $36.00
+                                                        </option>
+                                                                                                                <option value="36.25">
+
+                                                            $36.25
+                                                        </option>
+                                                                                                                <option value="36.50">
+
+                                                            $36.50
+                                                        </option>
+                                                                                                                <option value="36.75">
+
+                                                            $36.75
+                                                        </option>
+                                                                                                                <option value="37.00">
+
+                                                            $37.00
+                                                        </option>
+                                                                                                                <option value="37.25">
+
+                                                            $37.25
+                                                        </option>
+                                                                                                                <option value="37.50">
+
+                                                            $37.50
+                                                        </option>
+                                                                                                                <option value="37.75">
+
+                                                            $37.75
+                                                        </option>
+                                                                                                                <option value="38.00">
+
+                                                            $38.00
+                                                        </option>
+                                                                                                                <option value="38.25">
+
+                                                            $38.25
+                                                        </option>
+                                                                                                                <option value="38.50">
+
+                                                            $38.50
+                                                        </option>
+                                                                                                                <option value="38.75">
+
+                                                            $38.75
+                                                        </option>
+                                                                                                                <option value="39.00">
+
+                                                            $39.00
+                                                        </option>
+                                                                                                                <option value="39.25">
+
+                                                            $39.25
+                                                        </option>
+                                                                                                                <option value="39.50">
+
+                                                            $39.50
+                                                        </option>
+                                                                                                                <option value="39.75">
+
+                                                            $39.75
+                                                        </option>
+                                                                                                                <option value="40.00">
+
+                                                            $40.00
+                                                        </option>
+                                                                                                                <option value="40.25">
+
+                                                            $40.25
+                                                        </option>
+                                                                                                                <option value="40.50">
+
+                                                            $40.50
+                                                        </option>
+                                                                                                                <option value="40.75">
+
+                                                            $40.75
+                                                        </option>
+                                                                                                                <option value="41.00">
+
+                                                            $41.00
+                                                        </option>
+                                                                                                                <option value="41.25">
+
+                                                            $41.25
+                                                        </option>
+                                                                                                                <option value="41.50">
+
+                                                            $41.50
+                                                        </option>
+                                                                                                                <option value="41.75">
+
+                                                            $41.75
+                                                        </option>
+                                                                                                                <option value="42.00">
+
+                                                            $42.00
+                                                        </option>
+                                                                                                                <option value="42.25">
+
+                                                            $42.25
+                                                        </option>
+                                                                                                                <option value="42.50">
+
+                                                            $42.50
+                                                        </option>
+                                                                                                                <option value="42.75">
+
+                                                            $42.75
+                                                        </option>
+                                                                                                                <option value="43.00">
+
+                                                            $43.00
+                                                        </option>
+                                                                                                                <option value="43.25">
+
+                                                            $43.25
+                                                        </option>
+                                                                                                                <option value="43.50">
+
+                                                            $43.50
+                                                        </option>
+                                                                                                                <option value="43.75">
+
+                                                            $43.75
+                                                        </option>
+                                                                                                                <option value="44.00">
+
+                                                            $44.00
+                                                        </option>
+                                                                                                                <option value="44.25">
+
+                                                            $44.25
+                                                        </option>
+                                                                                                                <option value="44.50">
+
+                                                            $44.50
+                                                        </option>
+                                                                                                                <option value="44.75">
+
+                                                            $44.75
+                                                        </option>
+                                                                                                                <option value="45.00">
+
+                                                            $45.00
+                                                        </option>
+                                                                                                                <option value="45.25">
+
+                                                            $45.25
+                                                        </option>
+                                                                                                                <option value="45.50">
+
+                                                            $45.50
+                                                        </option>
+                                                                                                                <option value="45.75">
+
+                                                            $45.75
+                                                        </option>
+                                                                                                                <option value="46.00">
+
+                                                            $46.00
+                                                        </option>
+                                                                                                                <option value="46.25">
+
+                                                            $46.25
+                                                        </option>
+                                                                                                                <option value="46.50">
+
+                                                            $46.50
+                                                        </option>
+                                                                                                                <option value="46.75">
+
+                                                            $46.75
+                                                        </option>
+                                                                                                                <option value="47.00">
+
+                                                            $47.00
+                                                        </option>
+                                                                                                                <option value="47.25">
+
+                                                            $47.25
+                                                        </option>
+                                                                                                                <option value="47.50">
+
+                                                            $47.50
+                                                        </option>
+                                                                                                                <option value="47.75">
+
+                                                            $47.75
+                                                        </option>
+                                                                                                                <option value="48.00">
+
+                                                            $48.00
+                                                        </option>
+                                                                                                                <option value="48.25">
+
+                                                            $48.25
+                                                        </option>
+                                                                                                                <option value="48.50">
+
+                                                            $48.50
+                                                        </option>
+                                                                                                                <option value="48.75">
+
+                                                            $48.75
+                                                        </option>
+                                                                                                                <option value="49.00">
+
+                                                            $49.00
+                                                        </option>
+                                                                                                                <option value="49.25">
+
+                                                            $49.25
+                                                        </option>
+                                                                                                                <option value="49.50">
+
+                                                            $49.50
+                                                        </option>
+                                                                                                                <option value="49.75">
+
+                                                            $49.75
+                                                        </option>
+                                                                                                                <option value="50.00">
+
+                                                            $50.00
+                                                        </option>
+                                                                                                                                                                        <option value="55.00">
+
+                                                            $55.00
+                                                        </option>
+                                                                                                                <option value="60.00">
+
+                                                            $60.00
+                                                        </option>
+                                                                                                                <option value="65.00">
+
+                                                            $65.00
+                                                        </option>
+                                                                                                                <option value="70.00">
+
+                                                            $70.00
+                                                        </option>
+                                                                                                                <option value="75.00">
+
+                                                            $75.00
+                                                        </option>
+                                                                                                                <option value="80.00">
+
+                                                            $80.00
+                                                        </option>
+                                                                                                                <option value="85.00">
+
+                                                            $85.00
+                                                        </option>
+                                                                                                                <option value="90.00">
+
+                                                            $90.00
+                                                        </option>
+                                                                                                                <option value="95.00">
+
+                                                            $95.00
+                                                        </option>
+                                                                                                                <option value="100.00">
+
+                                                            $100.00
+                                                        </option>
+                                                                                                        </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                        <div class="row mt-2">
+                                    <div class="col-sm-12">
+                                        <button id="submit-order-btn" type="button" class="btn btn-primary btn-block">Place Order</button>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    
+                                        </div>
+            </div>
+        </div>
+    </div>
+</div>

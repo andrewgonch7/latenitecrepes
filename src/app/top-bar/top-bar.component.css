@@ -1,0 +1,144 @@
+
+.title {
+  font-family: Lourdes;
+  font-size: 50px;
+  color: #774a4a;
+}
+
+.Rectangle-2 {
+  width: 120px;
+  height: 56px;
+  border-radius: 35px;
+  border: solid 1px #707070;
+  background-color: #774a4a;
+  justify-content: center;
+  align-self: flex-end;
+  font-family: Lourdes;
+  font-size: 27px;
+}
+
+.websiteOptions {
+  display: block;
+  float: left;
+  padding: 8px 0px 0px 0px; /* Adjusted this padding before */
+}
+
+.authenticate {
+  display: block;
+  overflow: hidden;
+}
+
+.login {
+  float: right;
+  margin-right: 12px;
+  padding-left: 10px;
+}
+
+.signup {
+  float: right;
+  padding-right: 10px;
+}
+
+.websiteOptionItem {
+  padding: 0px 10px 0px 10px;
+  font-family: Lourdes;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 22px;
+  color: #4d4d4d;
+}
+
+.content {
+  width: 600px;
+  overflow: hidden;
+}
+
+.content img {
+  margin-right: 15px;
+  float: left;
+}
+
+.content h3,
+.content p{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.websiteOptions2 {
+  display: none;
+}
+
+@media (max-width: 935px) and (min-width: 768px) {
+  .authenticate {
+    display: none;
+  }
+
+  .websiteOptions {
+    display: none;
+  }
+
+  .websiteOptions2 {
+    display: flex;
+  }
+
+  .dropdown {
+    padding-left: 9px;
+    filter: invert(31%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(88%) contrast(86%);
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+  }
+
+  a {
+    width: 100px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .title {
+    font-family: Lourdes;
+    font-size: 20px;
+    color: #774a4a;
+    padding-top: 16px;
+    line-height: 1em;
+  }
+
+  .authenticate {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+  }
+
+  svg {
+    filter: invert(31%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(88%) contrast(86%);
+  }
+
+  .websiteOptions {
+    padding: 0; /* Adjusted this padding before */
+  }
+
+}
+
+
